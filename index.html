@@ -14,13 +14,12 @@
     }
 
     body {
-      /* Ajustado para 'contain' para a foto aparecer inteira sem cortes */
       background-image: url('./assets/fotos/foto3.jpg');
       background-size: contain; 
       background-position: center;
       background-attachment: fixed;
       background-repeat: no-repeat;
-      background-color: #f9f9f9; /* Cor de fundo caso a foto não ocupe a tela toda */
+      background-color: #f9f9f9;
       
       color: #004d40;
       font-family: 'Lato', sans-serif;
@@ -36,11 +35,11 @@
       width: 100%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end; /* Move o texto e botão para baixo para não tampar o rosto na foto */
+      justify-content: flex-end; 
       align-items: center;
       text-align: center;
       background: transparent; 
-      padding: 50px 20px; /* Espaçamento inferior */
+      padding: 50px 20px;
       position: fixed;
       z-index: 2000;
       top: 0;
@@ -73,8 +72,8 @@
     #conteudo {
       display: none;
       width: 100%;
-      max-width: 600px;
-      padding: 20px;
+      max-width: 500px; /* Reduzi um pouco a largura máxima */
+      padding: 15px; /* Reduzi o padding lateral */
       text-align: center;
       animation: fadeIn 1.5s ease;
       position: relative;
@@ -83,36 +82,35 @@
 
     .cartao-crianca {
       background: rgba(255, 255, 255, 0.9);
-      padding: 35px 25px;
+      padding: 20px 20px; /* Reduzi drasticamente o padding interno (era 35px 25px) */
       border-radius: 15px;
-      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-      margin-top: 40px;
-      margin-bottom: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      margin-top: 20px; /* Reduzi a margem superior (era 40px) */
+      margin-bottom: 20px; /* Reduzi a margem inferior (era 30px) */
       backdrop-filter: blur(5px);
     }
 
     h1 {
       font-family: 'Playfair Display', serif;
-      font-size: 2.2rem;
-      margin-bottom: 20px;
+      font-size: 1.8rem; /* Reduzi o tamanho da fonte (era 2.2rem) */
+      margin-bottom: 12px;
       line-height: 1.2;
-      /* Sombra reforçada para leitura sobre a foto nítida */
       text-shadow: 2px 2px 4px rgba(255,255,255,1), 0 0 10px rgba(255,255,255,0.5);
     }
 
     .mensagem-fofa {
-      font-size: 1.2rem;
-      line-height: 1.6;
+      font-size: 1.05rem; /* Reduzi levemente a fonte (era 1.2rem) */
+      line-height: 1.5;
       color: #222;
     }
 
     .slider-container {
       width: 100%;
       aspect-ratio: 1 / 1;
-      max-width: 450px;
-      margin: 0 auto 30px auto;
+      max-width: 400px; /* Reduzi o tamanho máximo das fotos (era 450px) */
+      margin: 0 auto 20px auto;
       background: #fff;
-      border: 10px solid white;
+      border: 8px solid white; /* Borda levemente mais fina */
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
       position: relative;
       overflow: hidden;
@@ -151,10 +149,10 @@
     }
 
     footer {
-      padding: 40px 0;
+      padding: 20px 0; /* Reduzi o padding do footer (era 40px) */
       font-family: 'Playfair Display', serif;
       font-style: italic;
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #000;
     }
   </style>
@@ -170,9 +168,9 @@
     <div class="cartao-crianca">
       <h1>Feliz Dia das Mães!</h1>
       <p class="mensagem-fofa">
-        Mãe, hoje é um dia que você deve celebrar muito, pois é o dia das mães, e você sempre foi e sempre será a melhor mãe do mundo. <br>
-        Você é muito especial para mim. Obrigado estar ao meu lado sempre que precisei, nos momentos bons e nos momentos ruins. <br>
-	Nunca se esqueça que EU TE AMO MUITO. ❤️
+        Mãe, hoje é um dia para celebrar você, que sempre foi a melhor mãe do mundo. <br>
+        Obrigado por estar ao meu lado em todos os momentos. Você é muito especial para mim. <br>
+        EU TE AMO MUITO. ❤️
       </p>
     </div>
 
